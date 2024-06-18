@@ -1,0 +1,243 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: rgba(17, 21, 31, 0.799);
+  color: white;
+  padding: 0.01em;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.header-content {
+  display: flex;
+  font-size: xx-small;
+  font-family: sans-serif;
+  font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 50px;
+  margin-right: 1em;
+}
+
+main {
+  flex: 1;
+  padding: 0.5em;
+  margin: 1em 0;
+}
+
+footer {
+  background-color: rgba(8, 13, 13, 0.9);
+  color: white;
+  text-align: center;
+  padding: 0.01em 0;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@media (max-width: 600px) {
+  .header-content {
+    flex-direction: column;
+  }
+
+  .logo {
+    margin-bottom: 1em;
+  }
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("./images/better.jpg") no-repeat center center fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  background: rgba(0, 0, 0, 0);
+}
+
+h1 {
+  margin: 0;
+  font-size: 3em;
+  color: #ffffff;
+}
+
+.button-container {
+  margin-top: 20px;
+  position: relative;
+}
+
+.animated-button {
+  padding: 10px 20px;
+  margin: 10px;
+  font-size: 1.5em;
+  color: #fff;
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.animated-button:hover {
+  background-color: #fff;
+  color: #fd9708;
+  transform: scale(1.1);
+}
+
+.navbar {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  z-index: 10;
+}
+.navbar .logo {
+  width: 60px;
+  margin: 30px 0;
+  cursor: pointer;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+}
+
+.user img {
+  width: 30px;
+  margin-left: 50px;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 25px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.top-right-button {
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  padding: 8px 25px;
+  background: transparent;
+  outline: none;
+  border: 2px solid #fff;
+  border-radius: 20px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, color 0.3s;
+}
+
+.top-right-button:hover {
+  background-color: #fffffff2;
+  color: #f684d5;
+  transform: scale(1.1);
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-button {
+  padding: 40px;
+  font-size: 1.1em;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s, background-image 0.3s,
+    border-color 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: transparent;
+}
+.grid-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  border-color: transparent;
+  transform: scale(1.1em);
+}
+.grid-button:nth-child(1):hover {
+  background-image: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+.grid-button:nth-child(2):hover {
+  background-image: linear-gradient(45deg, #ff416c, #ff4b2b);
+}
+
+.grid-button:nth-child(3):hover {
+  background-image: linear-gradient(45deg, #28a745, #28d5a6);
+}
+
+.grid-button:nth-child(4):hover {
+  background-image: linear-gradient(45deg, #6a11cb, #2575fc);
+}
+
+.grid-button:nth-child(5):hover {
+  background-image: linear-gradient(45deg, #ff7e5f, #feb47b);
+}
+
+.grid-button:nth-child(6):hover {
+  background-image: linear-gradient(45deg, #7f00ff, #e100ff);
+}
+
+.grid-button:nth-child(7):hover {
+  background-image: linear-gradient(45deg, #8e2de2, #4a00e0);
+}
+
+.grid-button:nth-child(8):hover {
+  background-image: linear-gradient(45deg, #00c6ff, #0072ff);
+}
+
+.grid-button:nth-child(9):hover {
+  background-image: linear-gradient(45deg, #f7971e, #ffd200);
+}
+
+.grid-button:nth-child(10):hover {
+  background-image: linear-gradient(45deg, #ff512f, #dd2476);
+}
+
+.grid-button:nth-child(11):hover {
+  background-image: linear-gradient(45deg, #24c6dc, #514a9d);
+}
+
+.grid-button:nth-child(12):hover {
+  background-image: linear-gradient(45deg, #f7797d, #fbd786);
+}
+
+.grid-button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
